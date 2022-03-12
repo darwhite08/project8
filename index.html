@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./css/main.css ">
+    <link rel="stylesheet" href="./Ul framework/w3.css">
+    <script async src="https://cse.google.com/cse.js?cx=1b3b65ed6e689be1f"></script>
+    <script data-require="jquery@3.1.1" data-semver="3.1.1" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/879ed49c00.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Flipwave</title>
+</head>
+
+<body>
+
+    <!-- Top Navigation bar -->
+    <div class="top-nav w3-white">
+        <div class="clearfix"></div>
+        <span href="top" class="tb-element"><a href="#">Home</a></span>
+        <!-- Flip wave svg   -->
+        <img id="flipwave-svg" src="./svg/Vanilla-1s-280px.svg" alt="flipwave-company-text">
+        <div class="rt-nav">
+
+            <!-- Search bar large devices -->
+            <div class="tb-div-element tb-div-search" id="tb-div-search">
+                <div class="gcse-search" type="search" name="search" id="search" placeholder="type something..."></div>
+            </div>
+
+            <!-- search icons for phone -->
+            <div class="tb-div-element tb-search-bar" id="tb-search-bar">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+
+            <!-- notification section -->
+            <div class="tb-div-element ns-ttp">
+                <span><i class="fa-solid fa-bell"></i></span>
+                <div class="tooltip-content">
+                    <h3 class="ns-header">Notifications</h3>
+                    <div class="ns-message">
+
+                        <!-- Put Notification Loop -->
+
+                        <a href="" class="ns-warp" id="ns-warp" style="cursor: pointer; text-decoration: none;">
+                            <img class="ns-user-pic" src="./images/demopic.jpg" alt="">
+                            <p class="ns-srt-message">Lorem ipsum dolor. deleniti, explicabo quas sint voluptates. Maxime, optio nihil!</p>
+                            <p class="ns-time">12 secs ago</p>
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- when clicked on cart  -->
+            <a href="/cart" class="tb-div-element">
+                <i class="fa-solid fa-cart-shopping"></i>
+            </a>
+
+            <div class="tb-div-element">
+                <img id="user-img" class="user-img" src="./images/demopic.jpg" alt="">
+            </div>
+        </div>
+
+        <!-- Smart phone more menu
+    tbm-up: Top Bar Menu User Profile;
+    tbm-uns: Top Bar Menu User Not Signed;
+    tbm-os:  Top Bar Menu Other Options -->
+
+        <div class="tb-div-element tb-bars">
+            <i id="tb-menu-slider" class="fa-solid fa-bars"></i>
+            <div class="tb-menu" id="tb-menu">
+                <span class="tbm-cutter" id="tbm-cutter"><i class="fa-solid fa-x"></i></span>
+
+                <!-- If user is logged in -->
+
+                <div class="tbm-up">
+
+                    <!-- Images of user -->
+
+                    <img class="w3-circle " src="" alt="">
+                    <div class="tbm-upt">
+                        <span class="name  w3-text-white w3-block">Sunil sharma</span>
+                        <span class="social">sunilsharma@gmail.com</span>
+                    </div>
+                </div>
+
+                <!-- If user is not login -->
+
+                <div class="tbm-uns">
+                    <button class="w3-button w3-hover-none w3-green w3-text-white" type="">Login</button>
+                </div>
+
+                <div class="tbm-list">
+                    <ul class="tbm-l1">
+                        <li class="tbm-l-elements"><a href="">Dashboard</a></li>
+                        <li class="tbm-l-elements"><a href="">Profile</a></li>
+                        <li class="tbm-l-elements"><a href="">My Orders</a></li>
+                        <li class="tbm-l-elements"><a href="/cart">My Cart</a></li>
+                        <li class="tbm-l-elements"><a href="">My Notifications</a></li>
+                        <li class="tbm-l-elements"><a href="">Dashboard</a></li>
+                    </ul>
+                </div>
+                <hr>
+                <div class="tbm-os w3-container">
+                    <button class="w3-button w3-center w3-hover-none w3-large">Logout</button>
+                    <button class="w3-button w3-center w3-hover-none w3-large">Setting</button>
+                </div>
+                <hr>
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+    <!-- Bottom bar navigation -->
+    <div class="bt-bar">
+
+        <div>
+            <!-- When clicked navigation will appear -->
+            <button class="sidebar-button" id="sidebar-button"><i class="fa-solid fa-bars"></i> All</button>
+            <!--Put side bar here-->
+
+            <span class="bt-element"><a href="#">food and beverages</a></span>
+            <span class="bt-element"><a href="#">Fresh</a></span>
+            <span class="bt-element"><a href="#">Amazon pay</a></span>
+            <span class="bt-element"><a href="">Gift Cards</a></span>
+            <span class="bt-element"><a href="">Healt, Household & Personal care</a></span>
+            <span class="bt-element"><a href="">Gift Ideas</a></span>
+            <span class="bt-element"><a href="">Home Improvement</a></span>
+            <span class="bt-element"><a href="">AmazonBasics</a></span>
+            <span class="bt-element"><a href="">Kindle ebooks</a></span>
+            <span class="bt-element"><a href="">Pet Supplies</a></span>
+            <span class="bt-element"><a href="">baby</a></span>
+            <span class="bt-element"><a href="">Sport, Fitness & Outdoors</a></span>
+            <span class="bt-element"><a href="">Grocery & Gourmet Foods</a></span>
+        </div>
+    </div>
+
+    <!-- Side bar Navigation -->
+    <div class="sb-container" id="sb-container">
+        <div class="sb-cutter sb-cutter-icon w3-display-container">
+            <i id="sb-cutter" class="fa-solid fa-x w3-padding w3-display-topright w3-padding-24"></i>
+        </div>
+        <div id="sb-user" class="sb-user sb-view w3-black">
+
+            <!-- Side bar user picture -->
+
+            <img class="sb-user-pic" src="" alt="">
+            <span class="sb-user-text"> Hello, Sunil Sharma</span>
+        </div>
+        <div id="sb-nav" class="sb-nav sb-view">
+            <div>
+                <div class="sb-row">
+                    <h3 class="sb-header">Trending</h3>
+                    <a class="sb-element" href="#">Text</a>
+                    <a class="sb-element" href="#">Text</a>
+                    <a class="sb-element" href="#">Text</a>
+                    <a class="sb-element" href="#">Text</a>
+                </div>
+
+                <div class="sb-row">
+                    <h3 class="sb-header">Trending</h3>
+                    <a class="sb-element" href="#">Text</a>
+                    <a class="sb-element" href="#">Text</a>
+                    <a class="sb-element" href="#">Text</a>
+                    <a class="sb-element" href="#">Text</a>
+                </div>
+
+                <div class="sb-row">
+                    <h3 class="sb-header">Trending</h3>
+                    <a class="sb-element" href="#">Text</a>
+                    <a class="sb-element" href="#">Text</a>
+                    <a class="sb-element" href="#">Text</a>
+                    <a class="sb-element" href="#">Text</a>
+                </div>
+
+                <div class="sb-row">
+                    <h3 class="sb-header">Trending</h3>
+                    <a class="sb-element" href="#">Text</a>
+                    <a class="sb-element" href="#">Text</a>
+                    <a class="sb-element" href="#">Text</a>
+                    <a class="sb-element" href="#">Text</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- end Navigation -->
+
+    <!-- main page design -->
+    <div class="main-page-design ">
+        <div class="w3-row mpd-first ">
+            <div class="mpd-text w3-col l6 s12">
+                <h1>Low Prices But Quality Products</h1>
+                <p>Shop at flipwave and get your product at minimum price</p>
+                <button class="w3-button w3-green w3-margin-top w3-xlarge" style="width: 75%;">Shop Now</button>
+            </div>
+            <img class="w3-col l6 s12" src="./images/demopic.jpg" alt="">
+        </div>
+
+        <div class="mpd-second ">
+            <div class="w3-center w3-margin-top w3-padding-24">
+                <span class="header-lt-br"></span><span class="header ">Top Categories to choose from</span><span class="header-rt-br"></span>
+            </div>
+
+            <!-- Loops here for more images -->
+            <div class="w3-center  w3-row-padding w3-mobile">
+                <img class="w3-col l4 s12 m6 w3-margin-top w3-mobile" src="./images/demopic.jpg" alt="">
+                <img class=" w3-col l4 s12 m6 w3-margin-top w3-mobile" src="./images/demopic.jpg" alt="">
+                <img class=" w3-col l4 s12 m6 w3-mobile w3-margin-top" src="./images/demopic.jpg" alt="">
+            </div>
+
+            <!-- Signup CTA -->
+
+            <div class="signup-inst">
+                <h2>Lorem, ipsum dolor sit amet consectetur adipisicing elit. consequuntur et </h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto qui placeat quibusdam ea mollitia ex officia fugiat necessitatibus, quia consequatur sit aspernatur optio, et exercitationem nobis veniam, maxime ducimus ab!</p>
+                <div>
+                    <span>some text</span> |
+                    <span>some text</span> |
+                    <span>Some text</span> |
+                </div>
+                <a href="/signup" class="w3-margin-top w3-button w3-white">Sign up now</a>
+            </div>
+
+            <!-- Products for you Cards -->
+
+            <div class="mpd-third">
+                <h2 class="header">Products for you</h2>
+                <div class="w3-row pc-main w3-mobile">
+                    <!-- Prodcut Overlay here -->
+
+                    <!-- Loops to show more Products -->
+                    <div href="/preview" id="product-container " class=" product-container w3-margin-top w3-col l3 s6 m4" style="text-decoration: none; ">
+                        <img src="./images/demopic.jpg" alt="" class="product-image">
+                        <div class="product-detail">
+                            <span class="product-name">Vanesa perfume</span><br>
+                            <span class="product-price">$10</span>
+                            <span><del class="product-price-del">$15</del></span>
+                            <span class="product-price-off">33.33% off</span><br>
+                            <span class="product-extra">&#37; $2 dollars discount on 1st order</span><br>
+                            <span class="product-delivery-details">Free Delivery</span><br>
+                            <span class="product-rating">4.5 &nbsp;	&#9733;</span>
+                            <span class="product-rating-details">1 review</span><br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Foot bar navigation -->
+
+    <footer class="text-gray-600 body-font">
+        <div class="container px-5 py-24 mx-auto">
+            <div class="flex flex-wrap md:text-left text-center -mb-10 -mx-4">
+                <div class="lg:w-1/6 md:w-1/2 w-full px-4">
+                    <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">CATEGORIES</h2>
+                    <nav class="list-none mb-10">
+                        <li>
+                            <a class="text-gray-600 hover:text-gray-800">First Link</a>
+                        </li>
+                        <li>
+                            <a class="text-gray-600 hover:text-gray-800">Second Link</a>
+                        </li>
+                        <li>
+                            <a class="text-gray-600 hover:text-gray-800">Third Link</a>
+                        </li>
+                        <li>
+                            <a class="text-gray-600 hover:text-gray-800">Fourth Link</a>
+                        </li>
+                    </nav>
+                </div>
+                <div class="lg:w-1/6 md:w-1/2 w-full px-4">
+                    <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">CATEGORIES</h2>
+                    <nav class="list-none mb-10">
+                        <li>
+                            <a class="text-gray-600 hover:text-gray-800">First Link</a>
+                        </li>
+                        <li>
+                            <a class="text-gray-600 hover:text-gray-800">Second Link</a>
+                        </li>
+                        <li>
+                            <a class="text-gray-600 hover:text-gray-800">Third Link</a>
+                        </li>
+                        <li>
+                            <a class="text-gray-600 hover:text-gray-800">Fourth Link</a>
+                        </li>
+                    </nav>
+                </div>
+                <div class="lg:w-1/6 md:w-1/2 w-full px-4">
+                    <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">CATEGORIES</h2>
+                    <nav class="list-none mb-10">
+                        <li>
+                            <a class="text-gray-600 hover:text-gray-800">First Link</a>
+                        </li>
+                        <li>
+                            <a class="text-gray-600 hover:text-gray-800">Second Link</a>
+                        </li>
+                        <li>
+                            <a class="text-gray-600 hover:text-gray-800">Third Link</a>
+                        </li>
+                        <li>
+                            <a class="text-gray-600 hover:text-gray-800">Fourth Link</a>
+                        </li>
+                    </nav>
+                </div>
+                <div class="lg:w-1/6 md:w-1/2 w-full px-4">
+                    <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">CATEGORIES</h2>
+                    <nav class="list-none mb-10">
+                        <li>
+                            <a class="text-gray-600 hover:text-gray-800">First Link</a>
+                        </li>
+                        <li>
+                            <a class="text-gray-600 hover:text-gray-800">Second Link</a>
+                        </li>
+                        <li>
+                            <a class="text-gray-600 hover:text-gray-800">Third Link</a>
+                        </li>
+                        <li>
+                            <a class="text-gray-600 hover:text-gray-800">Fourth Link</a>
+                        </li>
+                    </nav>
+                </div>
+                <div class="lg:w-1/6 md:w-1/2 w-full px-4">
+                    <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">CATEGORIES</h2>
+                    <nav class="list-none mb-10">
+                        <li>
+                            <a class="text-gray-600 hover:text-gray-800">First Link</a>
+                        </li>
+                        <li>
+                            <a class="text-gray-600 hover:text-gray-800">Second Link</a>
+                        </li>
+                        <li>
+                            <a class="text-gray-600 hover:text-gray-800">Third Link</a>
+                        </li>
+                        <li>
+                            <a class="text-gray-600 hover:text-gray-800">Fourth Link</a>
+                        </li>
+                    </nav>
+                </div>
+                <div class="lg:w-1/6 md:w-1/2 w-full px-4">
+                    <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">CATEGORIES</h2>
+                    <nav class="list-none mb-10">
+                        <li>
+                            <a class="text-gray-600 hover:text-gray-800">First Link</a>
+                        </li>
+                        <li>
+                            <a class="text-gray-600 hover:text-gray-800">Second Link</a>
+                        </li>
+                        <li>
+                            <a class="text-gray-600 hover:text-gray-800">Third Link</a>
+                        </li>
+                        <li>
+                            <a class="text-gray-600 hover:text-gray-800">Fourth Link</a>
+                        </li>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <div class="border-t border-gray-200">
+            <div class="container px-5 py-8 flex flex-wrap mx-auto items-center">
+                <div class="flex md:flex-nowrap flex-wrap justify-center items-end md:justify-start">
+                    <div class="relative sm:w-64 w-40 sm:mr-4 mr-2">
+                        <label for="footer-field" class="leading-7 text-sm text-gray-600">Header</label>
+                        <input type="text" id="footer-field" name="footer-field" class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:ring-2 focus:bg-transparent focus:ring-indigo-200 focus:border-indigo-500 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+                    </div>
+                    <button class="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded">search</button>
+                    <p class="text-gray-500 text-sm md:ml-6 md:mt-0 mt-2 sm:text-left text-center">first para text
+                        <br class="lg:block hidden">Second para text
+                    </p>
+                </div>
+                <span class="inline-flex lg:ml-auto lg:mt-0 mt-6 w-full justify-center md:justify-start md:w-auto">
+        <a class="text-gray-500">
+        <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+            <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+        </svg>
+        </a>
+        <a class="ml-3 text-gray-500">
+        <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+            <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+        </svg>
+        </a>
+        <a class="ml-3 text-gray-500">
+        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+            <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+            <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+        </svg>
+        </a>
+        <a class="ml-3 text-gray-500">
+        <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
+            <path stroke="none" d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
+            <circle cx="4" cy="4" r="2" stroke="none"></circle>
+        </svg>
+        </a>
+    </span>
+            </div>
+        </div>
+        <div class="bg-gray-100">
+            <div class="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row">
+                <!-- Javascript dynamics -->
+                <p class="text-gray-500 text-sm text-center sm:text-left">© 2022 — Flipwave
+                    <!-- social image -->
+                    <a href="" class="text-gray-600 ml-1" target="_blank" rel="noopener noreferrer">@social user</a>
+                </p>
+                <span class="sm:ml-auto sm:mt-0 mt-2 sm:w-auto w-full sm:text-left text-center text-gray-500 text-sm">Enamel pin tousled raclette tacos irony</span>
+            </div>
+        </div>
+    </footer>
+
+    <!--  -->
+    <script src="./javascript/mpd.js"></script>
+    <script src="./javascript/product.js"></script>
+    <script src="./javascript/responsive-script/cart.js"></script>
+    <script src="./javascript/responsive-script/nav.js"></script>
+    <script src="./javascript/responsive-script/navigation.js"></script>
+    <script src="./javascript/responsive-script/notification.js"></script>
+    <script src="./javascript/responsive-script/overylay-options.js"></script>
+    <script src="./javascript/responsive-script/preview.js"></script>
+    <script src="./javascript/responsive-script/product-overlay.js"></script>
+    <script src="./javascript/responsive-script/products.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha512-z4OUqw38qNLpn1libAN9BsoDx6nbNFio5lA6CuTp9NlK83b89hgyCVq+N5FdBJptINztxn1Z3SaKSKUS5UP60Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.js" integrity="sha512-E378bwaeZf1nwXeJGIwTB58A5gPt5jFU3u6aTGja4ZdRFJeo/N/REKnBgNZOZlH6JdnOPO98vg2AnSGaNfCMFQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://kit.fontawesome.com/879ed49c00.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,220 @@
+.main-page-design {
+    margin-left: 16vh;
+    margin-right: 16vh;
+    margin-top: 4vh;
+    box-sizing: border-box;
+}
+
+.mpd-text {
+    padding-right: 16.6vh;
+    padding-left: 20vh;
+    padding-top: 10vh;
+    word-wrap: break-word;
+}
+
+.mpd-text button {
+    margin-top: 4vh;
+}
+
+.main-page-design h1 {
+    font-weight: bold;
+    font-size: 38px;
+    word-wrap: break-word;
+}
+
+.main-page-design p {
+    font-size: 18px;
+    margin: 28px 0 28px 0;
+}
+
+.mpd-first button {
+    border-radius: 10px;
+}
+
+.main-page-design img {
+    height: 60vh;
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+.mpd-second .header {
+    font-size: 38px;
+    font-weight: bold;
+    padding: 20px 0 20px 0;
+}
+
+.mpd-second .header-lt-br,
+.mpd-second .header-rt-br {
+    border: 1px solid rgb(116, 110, 110);
+    display: inline-block;
+    width: 300px;
+    margin-bottom: 8px;
+}
+
+.mpd-second .header-rt-br {
+    margin: 0 0 8px 20px;
+}
+
+.mpd-second .header-lt-br {
+    margin: 0px 20px 8px 0;
+}
+
+.signup-inst {
+    background-image: url('../../images/demopic.jpg');
+    color: white;
+    padding: 20px;
+    margin: 2vh;
+    border-radius: 2px;
+}
+
+.signup-inst button {
+    margin-top: 2vh;
+}
+
+.mpd-third .header {
+    margin: 4vh 4vh 4vh 2vh;
+    border-bottom: 2px solid grey;
+    width: 24%;
+}
+
+
+/* For smart phone with max-width 662px */
+
+@media only screen and (max-width: 662px) {
+    .main-page-design {
+        margin-left: 3vh;
+        margin-right: 2vh;
+        margin-top: 1vh;
+    }
+    .mpd-text {
+        padding-right: 1.6vh;
+        padding-left: 2vh;
+        padding-top: 1vh;
+        word-wrap: break-word;
+    }
+    .main-page-design h1 {
+        font-weight: bold;
+        font-size: 18px;
+        word-wrap: break-word;
+    }
+    .main-page-design p {
+        font-size: 14px;
+        margin: 8px 0 8px 0;
+    }
+    .mpd-first button {
+        border-radius: 10px;
+        margin-bottom: 10px;
+    }
+    .main-page-design img {
+        height: 30vh;
+        width: 100vw;
+        overflow: hidden;
+        border-radius: 20px;
+    }
+    .mpd-second .header {
+        font-size: 15px;
+        font-weight: bold;
+        padding: 10px 0 10px 0;
+    }
+    .mpd-second .header-lt-br,
+    .mpd-second .header-rt-br {
+        border: 1px solid rgb(116, 110, 110);
+        display: inline-block;
+        width: 25px;
+        margin-bottom: 8px;
+    }
+    .mpd-second .header-rt-br {
+        margin: 0 0 4px 4px;
+    }
+    .mpd-second .header-lt-br {
+        margin: 0px 4px 4px 0;
+    }
+    .signup-inst {
+        background-image: url('../../images/demopic.jpg');
+        color: white;
+        padding: 20px 10px 20px 10px;
+        margin: 2vh;
+        border-radius: 2px;
+    }
+    .signup-inst button {
+        margin-top: 2vh;
+    }
+    .mpd-third .header {
+        margin: 1vh 1vh 1vh 1vh;
+        border-bottom: 2px solid grey;
+        width: 50%;
+    }
+    /* product container */
+    .pc-main {
+        margin: 0 2vw 0 -2vw;
+    }
+}
+
+
+/* for tablets with max width 922 px */
+
+@media only screen and (max-width: 922px) {
+    .main-page-design {
+        margin-left: 3vh;
+        margin-right: 2vh;
+        margin-top: 1vh;
+    }
+    .mpd-text {
+        padding-right: 1.6vh;
+        padding-left: 2vh;
+        padding-top: 1vh;
+        word-wrap: break-word;
+    }
+    .main-page-design h1 {
+        font-weight: bold;
+        font-size: 18px;
+        word-wrap: break-word;
+    }
+    .main-page-design p {
+        font-size: 14px;
+        margin: 8px 0 8px 0;
+    }
+    .mpd-first button {
+        border-radius: 10px;
+        margin-bottom: 10px;
+    }
+    .main-page-design img {
+        height: 30vh;
+        width: 100%;
+        overflow: hidden;
+        border-radius: 20px;
+    }
+    .mpd-second .header {
+        font-size: 15px;
+        font-weight: bold;
+        padding: 10px 0 10px 0;
+    }
+    .mpd-second .header-lt-br,
+    .mpd-second .header-rt-br {
+        border: 1px solid rgb(116, 110, 110);
+        display: inline-block;
+        width: 25px;
+        margin-bottom: 8px;
+    }
+    .mpd-second .header-rt-br {
+        margin: 0 0 4px 4px;
+    }
+    .mpd-second .header-lt-br {
+        margin: 0px 4px 4px 0;
+    }
+    .signup-inst {
+        background-image: url('../../images/demopic.jpg');
+        color: white;
+        padding: 20px 10px 20px 10px;
+        margin: 2vh;
+        border-radius: 2px;
+    }
+    .signup-inst button {
+        margin-top: 2vh;
+    }
+    .mpd-third .header {
+        margin: 1vh 1vh 1vh 1vh;
+        border-bottom: 2px solid grey;
+        width: 50%;
+    }
+}

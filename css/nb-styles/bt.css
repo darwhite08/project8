@@ -1,0 +1,36 @@
+.bt-bar {
+    display: inline-block;
+    background-color: var(--charcol);
+    width: 100%;
+    height: 5vh;
+    padding: 1vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.bt-element a {
+    padding: 18px 4px 80px 4px;
+    text-decoration: none;
+    color: var(--base-white);
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.sidebar-button {
+    background-color: transparent;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 600px) {
+    .bt-bar {
+        height: 4vh;
+    }
+}
+
+@media only screen and (max-width: 922px) {
+    .bt-bar {
+        height: 4vh;
+    }
+}

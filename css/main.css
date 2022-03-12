@@ -1,0 +1,32 @@
+@import url(colors.css);
+@import url(./mpd/mp-design.css);
+@import url(./nb-styles/bt.css);
+@import url(./nb-styles/foot-bar.css);
+@import url(./nb-styles/ns-tp.css);
+@import url(./nb-styles/side-bar.css);
+@import url(./nb-styles/tb.css);
+@import url(./product-details-styles/product.css);
+@import url(./product-details-styles/product-details-container.css);
+@import url(./product-order/cart.css);
+@import url(./product-order/delivery-address.css);
+@import url(./product-order/scart.css);
+@import url(./product-overlay/po-choice.css);
+@import url(./product-overlay/po.css);
+@import url(./product-preview/pv.css);
+@import url(./profile/profile-side-bar.css);
+@import url(./profile/profile.setting.css);
+@import url(./profile/site-setting.css);
+@import url(./signup/login.css);
+@import url(./signup/signup.css);
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Condensed', sans-serif;
+    scroll-behavior: smooth;
+}
+
+a {
+    cursor: pointer;
+}
