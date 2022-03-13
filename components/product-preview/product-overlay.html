@@ -1,65 +1,100 @@
-<!-- 
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/main.css ">
+    <link rel="stylesheet" href="../../Ul-framework/w3.css">
+    <script async src="https://cse.google.com/cse.js?cx=1b3b65ed6e689be1f"></script>
+    <script data-require="jquery@3.1.1" data-semver="3.1.1" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/879ed49c00.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!-- 
 po:Product Overlay
 po-si:Product Overlay slide images
 po-pd:Product Overlay product Details
 po-pn:Product Overlau Product Name
  -->
-<div class="po-main w3-display-containe" id="po-main-id">
-    <span class="po-main-cutter w3-display-topright w3-padding" id="po-main-cutter"><i class="fa-solid fa-x"></i></span>
-    <div class="po-container w3-row ">
-        <!-- Image-Slides container  -->
-        <div class="po-si w3-col l5 s12 m12 w3-mobile">
-            <% for( let index = 0; index < 1; index++ ) { %>
+    <div class="po-main w3-display-containe" id="po-main-id">
+        <span class="po-main-cutter w3-display-topright w3-padding" id="po-main-cutter"><i class="fa-solid fa-x"></i></span>
+        <div class="po-container w3-row ">
+            <!-- Image-Slides container  -->
+            <div class="po-si w3-col l5 s12 m12 w3-mobile">
                 <div class="my-slides fade">
                     <img src="../../../public/images/demopic.jpg" style="width:100%">
                 </div>
-                <% } %>
-        </div>
+            </div>
 
-        <!-- Product Overlay Details  -->
+            <!-- Product Overlay Details  -->
 
-        <div class="po-pd w3-col l7 s12 m12 w3-display-container ">
-            <div class="po-pn">
-                <span class="w3-padding w3pad w3-display-topright" id="pd-main-cutter"><i class="fa-solid fa-x"></i></span>
-                <div class="po-product-name">
-                    <span class="po-header">VANESA PERFUME</span><br>
-                    <span class="w3-text-grey w3-large">Lorem ipsum dolor sit, amet ipsum dolor sit </span><br>
-                    <a class="w3-btn w3-hover-none w3-border w3-margin-top" href="http://" target="_blank" rel="noopener noreferrer"><Span>4.5</Span> <span>140 ratings</span></a>
+            <div class="po-pd w3-col l7 s12 m12 w3-display-container ">
+                <div class="po-pn">
+                    <span class="w3-padding w3pad w3-display-topright" id="pd-main-cutter"><i class="fa-solid fa-x"></i></span>
+                    <div class="po-product-name">
+                        <span class="po-header">VANESA PERFUME</span><br>
+                        <span class="w3-text-grey w3-large">Lorem ipsum dolor sit, amet ipsum dolor sit </span><br>
+                        <a class="w3-btn w3-hover-none w3-border w3-margin-top" href="http://" target="_blank" rel="noopener noreferrer"><Span>4.5</Span> <span>140 ratings</span></a>
+                        <hr>
+                        <span class="po-price">$10 <del class="po-previous-price" >$. 15</del></span>
+                        <Span class="po-discount">33.33% off</Span><br>
+                        <span class="w3-block w3-margin-bottom w3-text-green">inclusive of all taxes</span>
+                    </div>
+                    <div class="po-other-options w3-margin-bottom ">
+                        <span class="w3-large po-header ">Select Size</span><br><br>
+                        <span class="w3-round  w3-border w3-padding w3-margin-right ">30ml</span>
+                        <span class="w3-round  w3-border w3-padding ">30ml</span>
+                    </div>
+
+                    <div class="po-buy-options ">
+                        <a class="w3-btn w3-margin-bottom w3-hover-none w3-light-blue w3-hover-blue w3-large w3-round-large w3-text-white w3-mobile" href="" style="width: 25%;">Buy Now</a>
+                        <a class="w3-btn w3-margin-bottom w3-hover-none w3-light-blue w3-hover-blue w3-large w3-round-large w3-text-white w3-mobile" href="" style="width: 25%;">Add to cart</a>
+                    </div>
                     <hr>
-                    <span class="po-price">$10 <del class="po-previous-price" >$. 15</del></span>
-                    <Span class="po-discount">33.33% off</Span><br>
-                    <span class="w3-block w3-margin-bottom w3-text-green">inclusive of all taxes</span>
+                    <div class="">
+                        <span class="w3-large w3-margin-right"> $10 <del class="w3-text-grey" pv-previous-price> &nbsp;$. 15 &nbsp;</del></span>
+                        <Span class="w3-large w3-text-orange">33.33% off</Span><br>
+                        <span>Seller:</span>
+                        <span>Priyanshu chandra</span>
+                    </div>
+                    <hr>
+                    <div class="po-delivery-options">
+                        <h4 class="po-header">DELIVERY OPTIONS</h4>
+                        <form action="">
+                            <input type="number" value="" placeholder="Enter PIN code">
+                        </form>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti, modi voluptatem! Sequi quia architecto accusantium soluta ratione iste, at quidem et, dolore dolor iure doloribus earum eum tenetur, sapiente ex.</p>
+                    </div>
+                    <div>
+                        <a class="w3-button w3-hover-none w3-text-green w3-center" href="">Know More</a>
+                    </div>
+                    <hr>
                 </div>
-                <div class="po-other-options w3-margin-bottom ">
-                    <span class="w3-large po-header ">Select Size</span><br><br>
-                    <span class="w3-round  w3-border w3-padding w3-margin-right ">30ml</span>
-                    <span class="w3-round  w3-border w3-padding ">30ml</span>
-                </div>
-
-                <div class="po-buy-options ">
-                    <a class="w3-btn w3-margin-bottom w3-hover-none w3-light-blue w3-hover-blue w3-large w3-round-large w3-text-white w3-mobile" href="" style="width: 25%;">Buy Now</a>
-                    <a class="w3-btn w3-margin-bottom w3-hover-none w3-light-blue w3-hover-blue w3-large w3-round-large w3-text-white w3-mobile" href="" style="width: 25%;">Add to cart</a>
-                </div>
-                <hr>
-                <div class="">
-                    <span class="w3-large w3-margin-right"> $10 <del class="w3-text-grey" pv-previous-price> &nbsp;$. 15 &nbsp;</del></span>
-                    <Span class="w3-large w3-text-orange">33.33% off</Span><br>
-                    <span>Seller:</span>
-                    <span>Priyanshu chandra</span>
-                </div>
-                <hr>
-                <div class="po-delivery-options">
-                    <h4 class="po-header">DELIVERY OPTIONS</h4>
-                    <form action="">
-                        <input type="number" value="" placeholder="Enter PIN code">
-                    </form>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti, modi voluptatem! Sequi quia architecto accusantium soluta ratione iste, at quidem et, dolore dolor iure doloribus earum eum tenetur, sapiente ex.</p>
-                </div>
-                <div>
-                    <a class="w3-button w3-hover-none w3-text-green w3-center" href="">Know More</a>
-                </div>
-                <hr>
             </div>
         </div>
     </div>
-</div>
+    <!-- Source Files for javascript -->
+    <script src="../../javascript/autocomplete.js"></script>
+    <script src="../../javascript/mpd.js"></script>
+    <script src="../../javascript/product.js"></script>
+    <script src="../../javascript/responsive-script/cart.js"></script>
+    <script src="../../javascript/responsive-script/nav.js"></script>
+    <script src="../../javascript/responsive-script/navigation.js"></script>
+    <script src="../../javascript/responsive-script/notification.js"></script>
+    <script src="../../javascript/responsive-script/overylay-options.js"></script>
+    <script src="../../javascript/responsive-script/preview.js"></script>
+    <script src="../../javascript/responsive-script/product-overlay.js"></script>
+    <script src="../../javascript/responsive-script/products.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha512-z4OUqw38qNLpn1libAN9BsoDx6nbNFio5lA6CuTp9NlK83b89hgyCVq+N5FdBJptINztxn1Z3SaKSKUS5UP60Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.js" integrity="sha512-E378bwaeZf1nwXeJGIwTB58A5gPt5jFU3u6aTGja4ZdRFJeo/N/REKnBgNZOZlH6JdnOPO98vg2AnSGaNfCMFQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://kit.fontawesome.com/879ed49c00.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,14 +1,32 @@
-<!-- spmc: Smart Phone Shopping Cart;
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/main.css ">
+    <link rel="stylesheet" href="../../Ul-framework/w3.css">
+    <script async src="https://cse.google.com/cse.js?cx=1b3b65ed6e689be1f"></script>
+    <script data-require="jquery@3.1.1" data-semver="3.1.1" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/879ed49c00.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <!-- spmc: Smart Phone Shopping Cart;
 spsc-ob: order button -->
-<div class="spsc">
-    <div class="spsc-header w3-padding-16 w3-padding-large ">
-        <span class="w3-large" style="font-weight: bold;">3 itesm in cart</span><br>
-        <span>Some text here</span>
-    </div>
-    <div class="spsc-container ">
-        <% for( let index = 0; index < 6; index++ ) { %>
+    <div class="spsc">
+        <div class="spsc-header w3-padding-16 w3-padding-large ">
+            <span class="w3-large" style="font-weight: bold;">3 itesm in cart</span><br>
+            <span>Some text here</span>
+        </div>
+        <div class="spsc-container ">
             <div class="spsc-product w3-border-bottom w3-padding  w3-row  ">
-                <img class=" w3-col s4" src="../../../public/images/demopic.jpg" alt="" style="height: 8vh; width: 8vh;">
+                <img class=" w3-col s4" src="../../images/demopic.jpg" alt="" style="height: 8vh; width: 8vh;">
                 <div class="w3-col s7 w3-margin-left">
                     <span>product name</span><br>
                     <span>Product specification</span>
@@ -26,28 +44,46 @@ spsc-ob: order button -->
                     </div>
                 </div>
             </div>
-            <% } %>
-    </div>
-    <div class="spsc-os w3-margin w3-padding">
-        <div class="w3-row w3-text-grey w3-margin-bottom">
-            <span class="w3-col s9">Sub Total</span>
-            <span class="w3-col s3">$100</span>
         </div>
-        <div class="w3-row w3-text-grey w3-margin-bottom">
-            <span class="w3-col s9">tax</span>
-            <span class="w3-col s3">$1</span>
+        <div class="spsc-os w3-margin w3-padding">
+            <div class="w3-row w3-text-grey w3-margin-bottom">
+                <span class="w3-col s9">Sub Total</span>
+                <span class="w3-col s3">$100</span>
+            </div>
+            <div class="w3-row w3-text-grey w3-margin-bottom">
+                <span class="w3-col s9">tax</span>
+                <span class="w3-col s3">$1</span>
+            </div>
+            <div class="w3-row w3-text-grey w3-margin-bottom">
+                <span class="w3-col s9">Delivery Charge</span>
+                <span class="w3-col s3">Free</span>
+            </div>
+            <div class="w3-row w3-margin-bottom" style="font-weight: bold;">
+                <span class="w3-col s9">Amount Payable</span>
+                <span class="w3-col s3">$101</span>
+            </div><br>
         </div>
-        <div class="w3-row w3-text-grey w3-margin-bottom">
-            <span class="w3-col s9">Delivery Charge</span>
-            <span class="w3-col s3">Free</span>
+        <div class="spsc-ob ">
+            <button class="w3-button w3-hover-none w3-text-white w3-hover-text-white">More Shopping</button>
+            <button class="w3-button w3-hover-none w3-text-white w3-hover-text-white">Continue</button>
         </div>
-        <div class="w3-row w3-margin-bottom" style="font-weight: bold;">
-            <span class="w3-col s9">Amount Payable</span>
-            <span class="w3-col s3">$101</span>
-        </div><br>
     </div>
-    <div class="spsc-ob ">
-        <button class="w3-button w3-hover-none w3-text-white w3-hover-text-white">More Shopping</button>
-        <button class="w3-button w3-hover-none w3-text-white w3-hover-text-white">Continue</button>
-    </div>
-</div>
+    <!-- Source Files for javascript -->
+    <script src="../../javascript/autocomplete.js"></script>
+    <script src="../../javascript/mpd.js"></script>
+    <script src="../../javascript/product.js"></script>
+    <script src="../../javascript/responsive-script/cart.js"></script>
+    <script src="../../javascript/responsive-script/nav.js"></script>
+    <script src="../../javascript/responsive-script/navigation.js"></script>
+    <script src="../../javascript/responsive-script/notification.js"></script>
+    <script src="../../javascript/responsive-script/overylay-options.js"></script>
+    <script src="../../javascript/responsive-script/preview.js"></script>
+    <script src="../../javascript/responsive-script/product-overlay.js"></script>
+    <script src="../../javascript/responsive-script/products.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha512-z4OUqw38qNLpn1libAN9BsoDx6nbNFio5lA6CuTp9NlK83b89hgyCVq+N5FdBJptINztxn1Z3SaKSKUS5UP60Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.js" integrity="sha512-E378bwaeZf1nwXeJGIwTB58A5gPt5jFU3u6aTGja4ZdRFJeo/N/REKnBgNZOZlH6JdnOPO98vg2AnSGaNfCMFQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://kit.fontawesome.com/879ed49c00.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

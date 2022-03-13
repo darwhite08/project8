@@ -1,39 +1,51 @@
-<div class="product-class-detail">
-    <h3 class="product-class">Perfume</h3>
-    <p class="product-class-details">Showing 61-80 out of 724238 Products</p>
-</div>
+<!DOCTYPE html>
+<html lang="en">
 
-<div class="w3-row w3-margin">
-    <% var current = 0; %>
-        <% while (current < 20){ %>
-            <div class="product-container w3-mobile w3-margin-top w3-margin-left w3-col l3 w3-mobile s12 m6" style="width: 23.5%; text-decoration: none;">
-                <img src="../../../public/images/demopic.jpg" alt="" class="product-image">
-                <div class="product-detail">
-                    <span class="product-name">Vanesa perfume</span><br>
-                    <span class="product-price">$10</span>
-                    <span><del class="product-price-del">$15</del></span>
-                    <span class="product-price-off">33.33% off</span><br>
-                    <span class="product-extra">&#37; $2 dollars discount on 1st order</span><br>
-                    <span class="product-delivery-details">Free Delivery</span><br>
-                    <span class="product-rating">4.5 &nbsp;	&#9733;</span>
-                    <span class="product-rating-details">1 review</span><br>
-                </div>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/main.css ">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="product-class-detail">
+        <h3 class="product-class">Perfume</h3>
+        <p class="product-class-details">Showing 61-80 out of 724238 Products</p>
+    </div>
+
+    <div class="w3-row w3-margin">
+        <div class="product-container w3-mobile w3-margin-top w3-margin-left w3-col l3 w3-mobile s12 m6" style="width: 23.5%; text-decoration: none;">
+            <img src="../../images/demopic.jpg" alt="" class="product-image">
+            <div class="product-detail">
+                <span class="product-name">Vanesa perfume</span><br>
+                <span class="product-price">$10</span>
+                <span><del class="product-price-del">$15</del></span>
+                <span class="product-price-off">33.33% off</span><br>
+                <span class="product-extra">&#37; $2 dollars discount on 1st order</span><br>
+                <span class="product-delivery-details">Free Delivery</span><br>
+                <span class="product-rating">4.5 &nbsp;	&#9733;</span>
+                <span class="product-rating-details">1 review</span><br>
             </div>
-            <%    current += 1;
-        };%>
-                <div class="over-lay-options" id="over-lay-options">
-                    <div class="w3-center olo-container">
-                        <span class="olo-cutter" id="olo-cutter">x</span>
-                        <h3>Select Preview Type</h3>
+        </div>
+        <div class="over-lay-options" id="over-lay-options">
+            <div class="w3-center olo-container">
+                <span class="olo-cutter" id="olo-cutter">x</span>
+                <h3>Select Preview Type</h3>
 
-                        <form action="">
-                            <input type="checkbox" name="" id=""><span class="olo-1 w3-button w3-hover-none">Over Lay</span>
-                            <input type="checkbox" name="" id=""><span class="olo-2 w3-button w3-hover-none">Another Page</span><br>
-                            <input type="radio" name="" id="">
-                            <span class="olo-3">Remember My choice</span><br>
-                            <button class="olo-button" type="submit">Done</button>
-                        </form>
-                    </div>
+                <form action="">
+                    <input type="checkbox" name="" id=""><span class="olo-1 w3-button w3-hover-none">Over Lay</span>
+                    <input type="checkbox" name="" id=""><span class="olo-2 w3-button w3-hover-none">Another Page</span><br>
+                    <input type="radio" name="" id="">
+                    <span class="olo-3">Remember My choice</span><br>
+                    <button class="olo-button" type="submit">Done</button>
+                </form>
+            </div>
 
-                </div>
-</div>
+        </div>
+    </div>
+</body>
+
+</html>
