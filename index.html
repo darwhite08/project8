@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -26,9 +27,13 @@
         <div class="rt-nav">
 
             <!-- Search bar large devices -->
-            <div class="tb-div-element tb-div-search" id="tb-div-search">
-                <div class="gcse-search" type="search" name="search" id="search" placeholder="type something..."></div>
-            </div>
+            <form class="automcomplete-container" autocomplete="off" action="">
+                <div class="autocomplete" style="width:300px;">
+                    <input id="myInput" type="text" name="myCountry" placeholder="Country">
+                </div>
+                <input type="submit">
+            </form>
+
 
             <!-- search icons for phone -->
             <div class="tb-div-element tb-search-bar" id="tb-search-bar">
@@ -412,7 +417,13 @@
         </div>
     </footer>
 
-    <!--  -->
+    <!-- Autom compete -->
+    <script>
+        autocomplete(document.getElementById("myInput"), countries);
+    </script>
+
+    <!-- Source Files for javascript -->
+    <script src="./javascript/autocomplete.js"></script>
     <script src="./javascript/mpd.js"></script>
     <script src="./javascript/product.js"></script>
     <script src="./javascript/responsive-script/cart.js"></script>

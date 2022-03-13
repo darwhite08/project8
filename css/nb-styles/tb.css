@@ -1,250 +1,77 @@
-/* Navigation bar */
-
-.top-nav {
-    border-bottom: 1px solid rgb(194, 190, 190);
-    position: sticky;
-    top: 0;
-    left: 0;
-    background-color: white;
-    z-index: 100;
-}
-
-.tb-element {
-    display: inline-block;
-    font-size: 20px;
-    text-decoration: none;
-    padding: 20px 0 20px 15px;
-}
-
-.tb-div-element {
-    display: inline-block;
-    font-size: 20px;
-    text-decoration: none;
-    padding: 20px 0 0px 15px;
-}
-
-.tb-element a {
-    text-decoration: none;
-    color: var(--base-black);
-    margin-left: 50px;
-}
-
-
-/* Svg  */
-
-#flipwave-svg {
-    height: 55px;
-    position: absolute;
-    left: 15%;
-    top: 1%;
-    clip: rect(0px, 200px, 55px, 0px);
-}
-
-
-/* right navigation buttons */
-
-.rt-nav {
-    float: right;
-    display: inline-flex;
-    align-items: center;
-    margin-top: -10px;
-    padding-left: 20px;
-}
-
-
-/* Icons */
-
-.ns-ttp .fa-bell,
-.fa-cart-shopping,
-.tb-search-bar .fa-magnifying-glass {
-    font-size: 30px;
-    margin-right: 15px;
-    color: rgb(105, 110, 114);
-    border-right: 3px solid rgb(226, 215, 215);
-    padding-right: 25px;
-}
-
-.tb-search-bar .fa-magnifying-glass {
-    display: none;
-}
-
-
-/* user Images */
-
-.user-img {
-    cursor: pointer;
-    height: 45px;
-    width: 45px;
-    border-radius: 25px;
-    background: url("../../images/download.jfif") no-repeat;
-    margin-right: 20px;
-}
-
-.user-img::after {
-    content: " ";
-    color: red;
-    height: 100px;
-    width: 100px;
-    position: absolute;
-}
-
-
-/* Search bar and Button */
-
-.tb-div-search {
-    width: 70vh;
-    margin-top: -1.2vh;
-    margin-right: 40px;
-    background-color: transparent;
-}
-
-.tb-div-search div {
-    border-radius: 10px;
-}
-
-
-/* smart phone slider */
-
-.tb-bars {
-    display: none;
-}
-
-.tb-menu {
-    display: none;
-    position: absolute;
-    top: 0;
-    right: 0;
-    height: 100vh;
-    width: 100vw;
-    background-color: white;
-}
-
-.tbm-up img {
-    height: 40px;
-    width: 40px;
-    margin: 20px;
-    float: left;
-    border-radius: 20px;
-}
-
-.tbm-up {
-    background-color: black;
-    height: 10vh;
-}
-
-.tbm-upt {
-    display: inline-block;
-    margin-top: 30px;
-    line-height: 10px;
-}
-
-.tbm-up .name {
-    font-size: 15px;
-    color: white;
-}
-
-.tbm-up .social {
-    color: rgb(214, 200, 200);
-    font-size: 12px;
-}
-
-.tbm-cutter {
-    position: absolute;
-    top: 2%;
-    right: 4%;
-    color: white;
-}
-
-
-/* if not logined */
-
-.tbm-uns {
-    position: absolute;
-    top: 2%;
-    left: 2%;
-}
-
-.tbm-uns button {
-    padding: 4px 24px 4px 24px;
-}
-
-
-/* phone slider list */
-
-.tbm-list {
-    padding-left: 20px;
-    padding-top: 10px;
-}
-
-.tbm-list ul {
-    list-style-type: none;
-}
-
-.tbm-l-elements a {
-    text-decoration: none;
-    font-size: 18px;
-}
-
-.tbm-l-elements {
-    border-bottom: 1px solid rgb(224, 219, 219);
-    padding: 4px 0 4px 0;
-    width: 50%;
-}
-
-
-/* Smart phone responsiveness code with max iwdth 662px */
-
-@media only screen and (max-width: 662px) {
+    /* Navigation bar */
+    
     .top-nav {
-        background-color: white;
+        border-bottom: 1px solid rgb(194, 190, 190);
         position: sticky;
         top: 0;
         left: 0;
-        height: 8vh;
+        background-color: white;
+        z-index: 100;
     }
+    
     .tb-element {
-        font-size: 24px;
+        display: inline-block;
+        font-size: 20px;
+        text-decoration: none;
         padding: 20px 0 20px 15px;
     }
-    .tb-element:first-of-type {
-        display: none;
-    }
+    
     .tb-div-element {
-        font-size: 24px;
-        padding: 10px 0 0 15px;
+        display: inline-block;
+        font-size: 20px;
+        text-decoration: none;
+        padding: 20px 0 0px 15px;
     }
+    
     .tb-element a {
+        text-decoration: none;
+        color: var(--base-black);
         margin-left: 50px;
     }
     /* Svg  */
+    
     #flipwave-svg {
-        height: 30px;
-        left: 4%;
-        top: 30%;
+        height: 55px;
+        position: absolute;
+        left: 15%;
+        top: 1%;
+        clip: rect(0px, 200px, 55px, 0px);
     }
+    /* right navigation buttons */
+    
     .rt-nav {
-        margin-top: 10px;
+        float: right;
+        display: inline-flex;
+        align-items: center;
+        margin-top: -10px;
         padding-left: 20px;
     }
+    /* Icons */
+    
     .ns-ttp .fa-bell,
     .fa-cart-shopping,
     .tb-search-bar .fa-magnifying-glass {
-        border-right: none;
-        font-size: 24px;
-        padding: 0 0 0 4px;
-        margin-right: 2px;
+        font-size: 30px;
+        margin-right: 15px;
+        color: rgb(105, 110, 114);
+        border-right: 3px solid rgb(226, 215, 215);
+        padding-right: 25px;
     }
+    
     .tb-search-bar .fa-magnifying-glass {
-        display: inline;
-    }
-    .user-img {
         display: none;
+    }
+    /* user Images */
+    
+    .user-img {
+        cursor: pointer;
         height: 45px;
         width: 45px;
         border-radius: 25px;
         background: url("../../images/download.jfif") no-repeat;
         margin-right: 20px;
     }
+    
     .user-img::after {
         content: " ";
         color: red;
@@ -253,11 +80,233 @@
         position: absolute;
     }
     /* Search bar and Button */
-    .tb-div-search {
+    
+    .automcomplete-container {
+        position: absolute;
+        right: 22%;
+        top: 1.3vh;
+    }
+    
+    .autocomplete {
+        /*the container must be positioned relative:*/
+        position: relative;
+        display: inline;
+        margin-top: 2vh;
+    }
+    
+    .autocomplete input {
+        border: 1px solid transparent;
+        background-color: #f1f1f1;
+        padding: 10px;
+        font-size: 16px;
+    }
+    
+    .autocomplete input[type=text] {
+        background-color: #f1f1f1;
+        border-radius: 8px 0 0 8px;
+        width: 45vw;
+    }
+    
+    .automcomplete-container input[type=submit] {
+        background-color: DodgerBlue;
+        color: #fff;
+        padding: 12px;
+        margin-left: -0.2vw;
+        border-radius: 0 8px 8px 0;
+        cursor: pointer;
+        position: absolute;
+        top: 2%;
+        right: -10%;
+    }
+    
+    .autocomplete-items {
+        border: 1px solid #d4d4d4;
+        border-bottom: none;
+        border-top: none;
+        /*position the autocomplete items to be the same width as the container:*/
+    }
+    
+    .autocomplete-items div {
+        padding: 10px;
+        cursor: pointer;
+        background-color: #fff;
+        border-bottom: 1px solid #d4d4d4;
+    }
+    
+    .autocomplete-items div:hover {
+        /*when hovering an item:*/
+        background-color: #e9e9e9;
+    }
+    
+    .autocomplete-active {
+        /*when navigating through the items using the arrow keys:*/
+        background-color: DodgerBlue !important;
+        color: #ffffff;
+    }
+    /* smart phone slider */
+    
+    .tb-bars {
         display: none;
     }
-    .tb-bars {
-        display: block;
-        margin: 0 2vw 0 0;
+    
+    .tb-menu {
+        display: none;
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 100vh;
+        width: 100vw;
+        background-color: white;
     }
-}
+    
+    .tbm-up img {
+        height: 40px;
+        width: 40px;
+        margin: 20px;
+        float: left;
+        border-radius: 20px;
+    }
+    
+    .tbm-up {
+        background-color: black;
+        height: 10vh;
+    }
+    
+    .tbm-upt {
+        display: inline-block;
+        margin-top: 30px;
+        line-height: 10px;
+    }
+    
+    .tbm-up .name {
+        font-size: 15px;
+        color: white;
+    }
+    
+    .tbm-up .social {
+        color: rgb(214, 200, 200);
+        font-size: 12px;
+    }
+    
+    .tbm-cutter {
+        position: absolute;
+        top: 2%;
+        right: 4%;
+        color: white;
+    }
+    /* if not logined */
+    
+    .tbm-uns {
+        position: absolute;
+        top: 2%;
+        left: 2%;
+    }
+    
+    .tbm-uns button {
+        padding: 4px 24px 4px 24px;
+    }
+    /* phone slider list */
+    
+    .tbm-list {
+        padding-left: 20px;
+        padding-top: 10px;
+    }
+    
+    .tbm-list ul {
+        list-style-type: none;
+    }
+    
+    .tbm-l-elements a {
+        text-decoration: none;
+        font-size: 18px;
+    }
+    
+    .tbm-l-elements {
+        border-bottom: 1px solid rgb(224, 219, 219);
+        padding: 4px 0 4px 0;
+        width: 50%;
+    }
+    /* Smart phone responsiveness code with max iwdth 662px */
+    
+    @media only screen and (max-width: 662px) {
+        .top-nav {
+            background-color: white;
+            position: sticky;
+            top: 0;
+            left: 0;
+            height: 8vh;
+        }
+        .tb-element {
+            font-size: 24px;
+            padding: 20px 0 20px 15px;
+        }
+        .tb-element:first-of-type {
+            display: none;
+        }
+        .tb-div-element {
+            font-size: 24px;
+            padding: 10px 0 0 15px;
+        }
+        .tb-element a {
+            margin-left: 50px;
+        }
+        /* Svg  */
+        #flipwave-svg {
+            height: 30px;
+            left: 4%;
+            top: 30%;
+        }
+        .rt-nav {
+            margin-top: 10px;
+            padding-left: 20px;
+        }
+        .ns-ttp .fa-bell,
+        .fa-cart-shopping,
+        .tb-search-bar .fa-magnifying-glass {
+            border-right: none;
+            font-size: 24px;
+            padding: 0 0 0 4px;
+            margin-right: 2px;
+        }
+        .tb-search-bar .fa-magnifying-glass {
+            display: inline;
+        }
+        .user-img {
+            display: none;
+            height: 45px;
+            width: 45px;
+            border-radius: 25px;
+            background: url("../../images/download.jfif") no-repeat;
+            margin-right: 20px;
+        }
+        .user-img::after {
+            content: " ";
+            color: red;
+            height: 100px;
+            width: 100px;
+            position: absolute;
+        }
+        /* Search bar and Button */
+        .automcomplete-container {
+            right: 0;
+            top: 8vh;
+            display: block;
+            background-color: rgb(255, 255, 255) !important;
+            width: 100vw;
+            padding: 4px 8px;
+            overflow: hidden;
+        }
+        .autocomplete input[type=text] {
+            border-radius: 8px 0 0 8px;
+            width: 80vw;
+        }
+        .automcomplete-container input[type=submit] {
+            border-radius: 0 6px 6px 0;
+            margin-left: 1vw;
+            top: 0.4vh;
+            right: 2%;
+        }
+        .autocomplete-items div {
+            padding: 0;
+        }
+    }
